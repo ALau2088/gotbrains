@@ -1,0 +1,134 @@
+/* Trivia */
+body {
+  overflow-x: hidden; }
+
+.page1 {
+  width: 500px;
+  margin: auto; }
+
+.card-question {
+  margin: 20px; }
+
+.list-group {
+  margin: 20px; }
+
+.cards-slider-wrapper {
+  display: flex;
+  position: absolute;
+  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+
+.cards-slider-wrapper .Card {
+  flex: 1;
+  min-width: 200px;
+  opacity: 0.3;
+  transform: scale(0.7);
+  transition: opacity 300ms linear, transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+
+.cards-slider-wrapper .Card .answers {
+  opacity: 0;
+  transition: opacity 150ms linear; }
+
+/*
+.cards-slider.active-slide-0 #card-0{
+  opacity: 1;
+}
+*/
+.cards-slider.active-slide-0 #card-0 {
+  opacity: 1;
+  transform: scale(1); }
+
+.cards-slider.active-slide-0 #card-0 .answers {
+  opacity: 1; }
+
+.cards-slider.active-slide-1 #card-1 {
+  opacity: 1;
+  transform: scale(1); }
+
+.cards-slider.active-slide-1 #card-1 .answers {
+  opacity: 1; }
+
+.cards-slider.active-slide-2 #card-2 {
+  opacity: 1;
+  transform: scale(1); }
+
+.cards-slider.active-slide-2 #card-2 .answers {
+  opacity: 1; }
+
+.cards-slider.active-slide-3 #card-3 {
+  opacity: 1;
+  transform: scale(1); }
+
+.cards-slider.active-slide-3 #card-3 .answers {
+  opacity: 1; }
+
+.cards-slider.active-slide-4 #card-4 {
+  opacity: 1;
+  transform: scale(1); }
+
+.cards-slider.active-slide-4 #card-4 .answers {
+  opacity: 1; }
+
+.cards-slider.active-slide-5 #card-5 {
+  opacity: 1;
+  transform: scale(1); }
+
+.cards-slider.active-slide-5 #card-5 .answers {
+  opacity: 1; }
+
+.cards-slider.active-slide-6 #card-6 {
+  opacity: 1;
+  transform: scale(1); }
+
+.cards-slider.active-slide-6 #card-6 .answers {
+  opacity: 1; }
+
+.cards-slider.active-slide-7 #card-7 {
+  opacity: 1;
+  transform: scale(1); }
+
+.cards-slider.active-slide-7 #card-7 .answers {
+  opacity: 1; }
+
+.cards-slider.active-slide-8 #card-8 {
+  opacity: 1;
+  transform: scale(1); }
+
+.cards-slider.active-slide-8 #card-8 .answers {
+  opacity: 1; }
+
+.cards-slider.active-slide-9 #card-9 {
+  opacity: 1;
+  transform: scale(1); }
+
+.cards-slider.active-slide-9 #card-9 .answers {
+  opacity: 1; }
+
+.cards-slider {
+  max-width: 550px;
+  margin: 0, auto;
+  position: relative;
+  height: 350px; }
+
+.cards-slider:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 420px;
+  outline: 5px solid #61DAFB;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+.triviaheader {
+  display: block;
+  height: 100px; }
+
+.timer {
+  float: right; }
+
+.time {
+  position: static;
+  display: block; }
+
+/* End Trivia */

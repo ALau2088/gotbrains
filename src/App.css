@@ -2,9 +2,17 @@
 body {
   overflow-x: hidden; }
 
+@media only screen and (max-width: 460px) {
+  body {
+    overflow-y: hidden; } }
+
 .page1 {
   width: 500px;
   margin: auto; }
+
+@media only screen and (max-width: 500px) {
+  .page1 {
+    width: 250px; } }
 
 .card-question {
   margin: 20px; }

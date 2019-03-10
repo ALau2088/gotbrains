@@ -3,13 +3,14 @@ body {
   overflow-x: hidden;
   @media only screen and (max-width: 460px){
     overflow-y: hidden;
+    -webkit-overflow-scrolling: auto;
   }
 }
 .page1 {
   width: 500px;
   margin: auto;
   @media only screen and (max-width: 500px){
-    width:250px;
+    width:300px;
   }
 }
 

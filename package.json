@@ -1,36 +1,38 @@
 {
-  "name": "myapp",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "axios": "^0.18.0",
-    "moment": "^2.22.2",
-    "node-sass": "^4.11.0",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-moment": "^0.8.3",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.0"
-  },
+  "name": "gotbrains",
+  "version": "1.0.0",
+  "description": "math trivia app",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "sass": "node-sass -w src -o src",
-    "dev": "concurrently \"npm run sass\" \"npm start\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+    "build": "webpack --mode=production --config webpack.config.js --watch",
+    "dev": "webpack --mode=development --config webpack.config.js --watch",
+    "server": "nodemon server/index.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALau2088/gotbrains.git"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "author": "DrewL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ALau2088/gotbrains/issues"
+  },
+  "homepage": "https://github.com/ALau2088/gotbrains#readme",
   "devDependencies": {
-    "concurrently": "^4.1.0"
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.0",
+    "nodemon": "^2.0.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2"
   }
 }

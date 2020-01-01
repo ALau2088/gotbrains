@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --mode=production --config webpack.config.js --watch",
     "dev": "webpack --mode=development --config webpack.config.js --watch",
-    "server": "nodemon server/index.js"
+    "server": "nodemon server/index.js",
+    "sass": "node-sass -w client/src -o client/src"
   },
   "repository": {
     "type": "git",
@@ -26,11 +27,13 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.0",
     "nodemon": "^2.0.2",
+    "style-loader": "^1.1.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
     "express": "^4.17.1",
+    "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2"

@@ -2,15 +2,18 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-const mongoose = require('mongoose');
-const db = require('./config/keys').mongoURI;
+// Connect to db
+require('./db');
 
-// Or using promises
-mongoose
-  .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('MongoDB Connected'))
-  .catch(err => console.log(err));
-
+// Static files
 app.use(express.static('public'));
+
+// Body Parser Middleware
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// Routes
+const users = require('./routes/users');
+app.use('/api/users', users);
 
 app.listen(port, () => console.log(`Server Now Listening on port ${port}`));

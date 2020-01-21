@@ -4,10 +4,12 @@
   "description": "math trivia app",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode=production --config webpack.config.js --watch",
+    "build": "webpack --mode=production --config webpack.config.js",
     "dev": "webpack --mode=development --config webpack.config.js --watch",
-    "server": "nodemon server/index.js",
-    "sass": "node-sass -w client/src -o client/src"
+    "dev:server": "nodemon server/index.js",
+    "server": "node server/index.js",
+    "sass": "node-sass -w client/src -o client/src",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
